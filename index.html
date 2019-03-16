@@ -73,7 +73,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">About Me</h2>
+            <h2 class="section-heading text-uppercase">About Me</h2><br>
             <h3 class="section-subheading text-muted">I'm a graduating masters student in data science at the University of
               San Francisco in June 2019. I am a seasoned problem solver and have 3+ years of experience of solving complex business problems
             using data science and machine learning. I have worked across varied domains and in disparate roles ranging from operations,
@@ -446,14 +446,27 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <h2 class="text-uppercase">Leanplum in App Purchase Prediction</h2>
+                  <p class="item-intro text-muted">Predicting the probability of a user making a purchase in
+                  next 7 and 14 days</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/Lean.jpeg" alt="">
+                  <strong>Objective</strong><br>
+                  <p> This project was a part of a in-classroom <a href="https://www.kaggle.com/c/predict-in-app-purchase/leaderboard">
+                    kaggle competition</a>. The objective of the competition was to make prediction on whether an user
+                  will make an in-app purchase or not in next 7 and 14 days. <a href="https://www.leanplum.com/">Lean Plum</a> was
+                    kind enough to share the data for the competition. <br><br>
+                    <strong>Approach and Results</strong><br>  The dataset consisted of 50gb+ data relating to user engagement,
+                    session level events, user level app specific attributes and message triggered data. We created 100+ features on
+                    each user based on various time frames. We treat the data as time series and create various
+                    central statistics as features relating to user engagement. We create data labels by taking
+                    last 2 week data and assign labels to each user based on purchase history. For modelling, we started by
+                    fitting models to individual data sets. Next, we selected best features using Boosting and Random Forest model
+                    and merged the whole dataset to improve performance. Finally, we used ensembling to further improve model performance.
+                    The competition used AUC as the evaluation metric and the best model achieved an AUC of 0.975.
+                  </p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Threads</li>
-                    <li>Category: Illustration</li>
+                    <li>Tools used: <i>Python(pandas, numpy, scikit-learn, matplotlib)</i> </li>
+                    <li>Techniques: <i>Feature engineering, Random Forest, Xgboost, Ensembling</i></li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
@@ -480,14 +493,26 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                 <h2 class="text-uppercase">WSDM - KKBox's Music Recommendation Challenge</h2>
+                  <p class="item-intro text-muted">Predicting if the user will re-listen to a given song</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/kkb.jpeg" alt="">
+                  <strong>Objective</strong><br>
+                  <p> This project is based on <a href="https://www.kaggle.com/c/kkbox-music-recommendation-challenge">
+                     WSDM - KKBox's Music Recommendation Challenge</a> dataset. The objective of the competition was to
+                    make prediction on whether an user will re-listen to a song or not. Broadly, it was a music recommendation
+                    problem.<br><br>
+                    <strong>Approach and Results</strong><br> The dataset consisted of meta data on Songs and Members. It
+                    also had data on user demographic and data specific to user engagement on platform. A lot of interesting features
+                    relating to user and songs were created and we benchmarked various classification models such as Naive Bayes, KNN,
+                    Logistic Regression, Random Forest, Light GBM and ensembling. Best model achieved an accuracy of 75.1%.
+                  </p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
+                    <li>Tools used: <i>Python(pandas, numpy, scikit-learn, matplotlib)</i> </li>
+                    <li>Techniques: <i>Feature engineering, Naive Bayes, KNN, Logistic Regression,
+                      Random Forest, Light GBM and ensembling</i></li>
+                    <li>Github: <a href="https://github.com/jyotipmahes/ML_project_621">Code </a> </li>
+                    <li>Presentation: <a href="https://github.com/jyotipmahes/ML_project_621/blob/master/Presentation/Music%20Recommendation%20System.pdf"> Final PPT </a> </li>
+
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
@@ -514,14 +539,26 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <h2 class="text-uppercase">LANL Earthquake Prediction</h2>
+                  <p class="item-intro text-muted">Predict the time remaining before laboratory earthquakes occur</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/earth.jpg" alt="">
+                  <strong>Objective</strong><br>
+                  <p> This project is based on <a href="https://www.kaggle.com/c/kkbox-music-recommendation-challenge">
+                     WSDM - KKBox's Music Recommendation Challenge</a> dataset. The objective of the competition was to
+                    make prediction on whether an user will re-listen to a song or not. Broadly, it was a music recommendation
+                    problem.<br><br>
+                    <strong>Approach and Results</strong><br> The dataset consisted of meta data on Songs and Members. It
+                    also had data on user demographic and data specific to user engagement on platform. A lot of interesting features
+                    relating to user and songs were created and we benchmarked various classification models such as Naive Bayes, KNN,
+                    Logistic Regression, Random Forest, Light GBM and ensembling. Best model achieved an accuracy of 75.1%.
+                  </p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Finish</li>
-                    <li>Category: Identity</li>
+                    <li>Tools used: <i>Python(pandas, numpy, scikit-learn, matplotlib)</i> </li>
+                    <li>Techniques: <i>Feature engineering, Naive Bayes, KNN, Logistic Regression,
+                      Random Forest, Light GBM and ensembling</i></li>
+                    <li>Github: <a href="https://github.com/jyotipmahes/ML_project_621">Code </a> </li>
+                    <li>Presentation: <a href="https://github.com/jyotipmahes/ML_project_621/blob/master/Presentation/Music%20Recommendation%20System.pdf"> Final PPT </a> </li>
+
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
@@ -548,14 +585,26 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                   <h2 class="text-uppercase">Fine-grained image classification</h2>
+                  <p class="item-intro text-muted">Predicting if the user will re-listen to a given song</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/bird.jpeg" alt="">
+                  <strong>Objective</strong><br>
+                  <p> This project is based on <a href="https://www.kaggle.com/c/kkbox-music-recommendation-challenge">
+                     WSDM - KKBox's Music Recommendation Challenge</a> dataset. The objective of the competition was to
+                    make prediction on whether an user will re-listen to a song or not. Broadly, it was a music recommendation
+                    problem.<br><br>
+                    <strong>Approach and Results</strong><br> The dataset consisted of meta data on Songs and Members. It
+                    also had data on user demographic and data specific to user engagement on platform. A lot of interesting features
+                    relating to user and songs were created and we benchmarked various classification models such as Naive Bayes, KNN,
+                    Logistic Regression, Random Forest, Light GBM and ensembling. Best model achieved an accuracy of 75.1%.
+                  </p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Lines</li>
-                    <li>Category: Branding</li>
+                    <li>Tools used: <i>Python(pandas, numpy, scikit-learn, matplotlib)</i> </li>
+                    <li>Techniques: <i>Feature engineering, Naive Bayes, KNN, Logistic Regression,
+                      Random Forest, Light GBM and ensembling</i></li>
+                    <li>Github: <a href="https://github.com/jyotipmahes/ML_project_621">Code </a> </li>
+                    <li>Presentation: <a href="https://github.com/jyotipmahes/ML_project_621/blob/master/Presentation/Music%20Recommendation%20System.pdf"> Final PPT </a> </li>
+
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
@@ -582,14 +631,26 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                   <h2 class="text-uppercase">Isolation Forest for Anomaly detection</h2>
+                  <p class="item-intro text-muted">Predicting if the user will re-listen to a given song</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/ano.jpeg" alt="">
+                  <strong>Objective</strong><br>
+                  <p> This project is based on <a href="https://www.kaggle.com/c/kkbox-music-recommendation-challenge">
+                     WSDM - KKBox's Music Recommendation Challenge</a> dataset. The objective of the competition was to
+                    make prediction on whether an user will re-listen to a song or not. Broadly, it was a music recommendation
+                    problem.<br><br>
+                    <strong>Approach and Results</strong><br> The dataset consisted of meta data on Songs and Members. It
+                    also had data on user demographic and data specific to user engagement on platform. A lot of interesting features
+                    relating to user and songs were created and we benchmarked various classification models such as Naive Bayes, KNN,
+                    Logistic Regression, Random Forest, Light GBM and ensembling. Best model achieved an accuracy of 75.1%.
+                  </p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
+                    <li>Tools used: <i>Python(pandas, numpy, scikit-learn, matplotlib)</i> </li>
+                    <li>Techniques: <i>Feature engineering, Naive Bayes, KNN, Logistic Regression,
+                      Random Forest, Light GBM and ensembling</i></li>
+                    <li>Github: <a href="https://github.com/jyotipmahes/ML_project_621">Code </a> </li>
+                    <li>Presentation: <a href="https://github.com/jyotipmahes/ML_project_621/blob/master/Presentation/Music%20Recommendation%20System.pdf"> Final PPT </a> </li>
+
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
@@ -616,14 +677,26 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                   <h2 class="text-uppercase">Article Recommendation</h2>
+                  <p class="item-intro text-muted">Predicting if the user will re-listen to a given song</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/article.jpeg" alt="">
+                  <strong>Objective</strong><br>
+                  <p> This project is based on <a href="https://www.kaggle.com/c/kkbox-music-recommendation-challenge">
+                     WSDM - KKBox's Music Recommendation Challenge</a> dataset. The objective of the competition was to
+                    make prediction on whether an user will re-listen to a song or not. Broadly, it was a music recommendation
+                    problem.<br><br>
+                    <strong>Approach and Results</strong><br> The dataset consisted of meta data on Songs and Members. It
+                    also had data on user demographic and data specific to user engagement on platform. A lot of interesting features
+                    relating to user and songs were created and we benchmarked various classification models such as Naive Bayes, KNN,
+                    Logistic Regression, Random Forest, Light GBM and ensembling. Best model achieved an accuracy of 75.1%.
+                  </p>
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Window</li>
-                    <li>Category: Photography</li>
+                    <li>Tools used: <i>Python(pandas, numpy, scikit-learn, matplotlib)</i> </li>
+                    <li>Techniques: <i>Feature engineering, Naive Bayes, KNN, Logistic Regression,
+                      Random Forest, Light GBM and ensembling</i></li>
+                    <li>Github: <a href="https://github.com/jyotipmahes/ML_project_621">Code </a> </li>
+                    <li>Presentation: <a href="https://github.com/jyotipmahes/ML_project_621/blob/master/Presentation/Music%20Recommendation%20System.pdf"> Final PPT </a> </li>
+
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
