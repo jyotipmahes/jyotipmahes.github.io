@@ -74,11 +74,11 @@
         <div class="row">
           <div class="col-lg-12 text-center">
             <h2 class="section-heading text-uppercase">About Me</h2><br>
-            <p>I'm a graduating masters student in data science at the University of
+            <p>I'm a graduating masters student in Data Science at the University of
               San Francisco in June 2019. I am a seasoned problem solver and have 3+ years of experience of solving complex business problems
-            using data science and machine learning. I have worked across varied domains and in disparate roles ranging from operations,
-            quality management, data analysis and product management. I am interested in solving critical business problems using
-            machine learning and data science.</p>
+            using Data Science and Machine Learning. I have worked across varied domains and in disparate roles ranging from Operations,
+            Quality Management, Data Analysis, and Product Management. I am interested in solving critical business problems using
+            Machine Learning and Data Science.</p>
           </div>
         </div>
       </div>
@@ -103,7 +103,7 @@
               <img class="img-fluid" src="img/portfolio/Lean.jpeg" alt="">
             </a>
             <div class="portfolio-caption">
-              <h5>Leanplum in App Purchase Prediction</h5>
+              <h5>Leanplum In-App Purchase Prediction</h5>
               <p class="text-muted">Using Customer's historical data, make prediction on probability of
               purchase in next 7 and 14 days. <br> [Python, Sklearn, Boosting, Random forest, Feature Engineering
                 , Ensembling]</p>
@@ -166,7 +166,7 @@
             <div class="portfolio-caption">
               <h5>Isolation Forest for Anomaly detection </h5>
               <p class="text-muted">From scratch implementation of Isolation forest algorithm for
-              Anomaly detection and incorporated changes to be make it robust to noisy features. <br>
+              Anomaly detection and incorporated changes to make it robust to noisy features. <br>
               [Python, Trees, matplotlib]</p>
             </div>
           </div>
@@ -210,9 +210,9 @@
                     <h5 class="subheading">Data Science Intern, Trulia</h5>
                   </div>
                   <div class="timeline-body">
-                    <p class="text-muted">Working on wide range of Computer Vision problem ranging from
+                    <p class="text-muted">Working on a wide range of Computer Vision problems ranging from
                     multi-label classification, localization and object-detection using weakly label data
-                    for Real-estate images. Bench marked various novel model architectures and
+                    for Real-estate images. Benchmarked various novel model architectures and
                     loss functions for weakly label data.</p>
                   </div>
                 </div>
@@ -456,20 +456,20 @@
               <div class="col-lg-8 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Leanplum in App Purchase Prediction</h2>
+                  <h2 class="text-uppercase">Leanplum In-App Purchase Prediction</h2>
                   <p class="item-intro text-muted">Predicting the probability of a user making a purchase in
                   next 7 and 14 days</p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/Lean.jpeg" alt="">
                   <strong>Objective</strong><br>
-                  <p> This project was a part of a in-classroom <a href="https://www.kaggle.com/c/predict-in-app-purchase/leaderboard">
-                    kaggle competition</a>. The objective of the competition was to make prediction on whether an user
-                  will make an in-app purchase or not in next 7 and 14 days. <a href="https://www.leanplum.com/">Lean Plum</a> was
+                  <p> This project was a part of an in-classroom <a href="https://www.kaggle.com/c/predict-in-app-purchase/leaderboard">
+                    Kaggle competition</a>. The objective of the competition was to make predictions on whether a user
+                  will make an in-app purchase or not in next 7 and 14 days. <a href="https://www.leanplum.com/">Leanplum</a> was
                     kind enough to share the data for the competition. <br><br>
                     <strong>Approach and Results</strong><br>  The dataset consisted of 50gb+ data relating to user engagement,
-                    session level events, user level app specific attributes and message triggered data. We created 100+ features on
-                    each user based on various time frames. We treat the data as time series and create various
-                    central statistics as features relating to user engagement. We create data labels by taking
-                    last 2 week data and assign labels to each user based on purchase history. For modelling, we started by
+                    session level events, user level app specific attributes and message data. We created 100+ features on
+                    each user based across different time frames. We treated the data as time series and created various
+                    central statistics as features relating to user engagement. We created data labels by taking
+                    last 2 week data and assigned labels to each user based on purchase history. For modeling, we started by
                     fitting models to individual data sets. Next, we selected best features using Boosting and Random Forest model
                     and merged the whole dataset to improve performance. Finally, we used ensembling to further improve model performance.
                     The competition used AUC as the evaluation metric and the best model achieved an AUC of 0.975.
@@ -509,10 +509,10 @@
                   <strong>Objective</strong><br>
                   <p> This project is based on <a href="https://www.kaggle.com/c/kkbox-music-recommendation-challenge">
                      WSDM - KKBox's Music Recommendation Challenge</a> dataset. The objective of the competition was to
-                    make prediction on whether an user will re-listen to a song or not. Broadly, it was a music recommendation
+                    make prediction on whether a user will re-listen to a song or not. Broadly, it was a music recommendation
                     problem.<br><br>
-                    <strong>Approach and Results</strong><br> The dataset consisted of meta data on Songs and Members. It
-                    also had data on user demographic and data specific to user engagement on platform. A lot of interesting features
+                    <strong>Approach and Results</strong><br> The dataset consisted of meta-data on Songs and Members. It
+                    also had data on user demographics and user engagement on platform. A lot of interesting features
                     relating to user and songs were created and we benchmarked various classification models such as Naive Bayes, KNN,
                     Logistic Regression, Random Forest, Light GBM and ensembling. Best model achieved an accuracy of 75.1%.
                   </p>
@@ -559,22 +559,22 @@
                     of modelling and prediction, we were trying to predict the time left for the next laboratory
                     Earthquake.<br><br>
                     <strong>Approach and Results</strong><br>
-                    <i>Storing on S3</i>: We started by storing the whole data on a S3 bucket.<br>
-                    <i>Feature Extracting using EC2</i> : The raw data is a time series data. Our
-                    objective was to look at a sequence of 150000 data points and predict the time
+                    <i>Storing on S3</i>: <br>We started by storing the whole data on a S3 bucket.<br>
+                    <i>Feature Extracting using EC2</i> :<br> The raw data was a time series data. Our
+                    objective was to look at a sequence of 150000 data points and predict time left
                     for the next Earthquake from the last time step. We decided to extract a lot
-                    of time series features. Since the data is large to fit on a local system,
-                    we use AWS EC2 instance for feature engineering. We used c5d.4xlarge instance
+                    of time series features from the data. Since the data was large to fit on a local system,
+                    we used AWS EC2 instance for feature engineering. We used c5d.4xlarge instance
                     to created 700K featured datapoints.<br>
-                    <i>MongoDB </i>: We store the featured data by creating a MongoDB database.
+                    <i>MongoDB </i>: <br>We stored the featured data by creating a MongoDB database.
                     We created a shared and distributed database consisting of 2 shards and 3
                     nodes per shard. We also created 3 node server and 2 configuration server(a
                     total 0f 11 servers).<br>
-                    <i>Modelling</i> : We use AWS EMR clusters at different configuration to
+                    <i>Modeling</i> : <br>We used AWS EMR clusters at different configuration to
                     build Spark ML models. In our experiment, we found that Random Forest was the best performing
                     algorithm. For that reason, we decided
-                    to run cross-validation to further improve our results. Our lowest RMSE score is 1.40,
-                    which is a significant improvement from our previous score of 2.20 for Random
+                    to run a cross-validation to further improve our results. Our lowest RMSE score was 1.40,
+                    which was a significant improvement from our previous score of 2.20 for Random
                     Forest with default parameters.
                   </p>
                   <ul class="list-inline">
@@ -619,12 +619,12 @@
                      Caltech-UCSD Birds 200</a> dataset. The main objective of this project was to explore
                     various deep learning architectures and explore Bi-Linear CNN for fine-grained image
                     classification.<br><br>
-                    <strong>Approach and Results</strong><br> I start by creating a base-line model for multi-class
-                    classification of bird images using ResNet34 trained on imagenet dataset. I fine tune the
-                    model using the birds dataset and get a Top1 precision of 74.49 and Top5 precision of 91.81.
-                    Next i trained a Bi-Linear CNN model on the dataset with vgg16 as base architecture and achieve
-                    Top1 precision of 77.47 and Top5 precision of 94.787. There is a potential for improvement
-                    by training the model longer
+                    <strong>Approach and Results</strong><br> I started by creating a base-line model for multi-class
+                    classification of bird images using ResNet34 trained on imagenet dataset. I fine tuned the
+                    model using the birds dataset and got a Top1 precision of 74.49 and Top5 precision of 91.81.
+                    Next, I trained a Bi-Linear CNN model on the dataset with vgg16 as the base architecture and achieved
+                    Top1 precision of 77.47 and Top5 precision of 94.787. There was a potential for improvement
+                    by training the model longer but i didnot train further due to time considerations.
                   </p>
                   <ul class="list-inline">
                     <li>Tools used: <i>Python, Pytorch, OpenCv, Matplotlib</i> </li>
@@ -662,12 +662,12 @@
                   <!-- Project Details Go Here -->
                    <h2 class="text-uppercase">Isolation Forest for Anomaly detection</h2>
                   <p class="item-intro text-muted">From scratch implementation of Isolation forest algorithm for Anomaly
-                    detection and modifications to be make it robust to noisy features. </p>
+                    detection and modifications to make it robust to noisy features. </p>
                   <img class="img-fluid d-block mx-auto" src="img/portfolio/ano.jpeg" alt="">
                   <strong>Objective</strong><br>
-                  <p> The goal of this project is to implement the original Isolation Forest algorithm
+                  <p> The goal of this project was to implement the original Isolation Forest algorithm
                     by Fei Tony Liu, Kai Ming Ting, and Zhi-Hua Zhou as a part of MSDS689 course. I also
-                    try to modify the original algorithm to make it robust to noisy features.<br><br>
+                    modified the original algorithm to make it robust to noisy features.<br><br>
                     <strong>Approach</strong><br> The algorithm is based on the idea that the anomalies
                     occur in isolation and it is much easier to separate anomalies using random split
                     in the feature range compared to normal instances. To simplify, anomalies are rare
@@ -680,7 +680,7 @@
                     length of each observation across the forest. We normalize the length with the
                     standard height of a binary tree and expect the length of the anomaly to be smaller
                     compared to normal instances. The improved version changes the logic of selecting the
-                    split value such that the splits are on the extremes rather than selecting from uniform
+                    split value such that the splits are on the extremes rather than selecting from a uniform
                     distribution.
                   </p>
                   <ul class="list-inline">
@@ -724,9 +724,9 @@
                     I have used Stanford's GloVe project trained on a dump of Wikipedia for the word
                     embeddings.<br><br>
                     <strong>Approach</strong><br> I used the pre-trained GloVe embeddings to find the
-                    document centroid for each document. Once I had the centroids, i found the distance between
+                    document centroid for each document. Once I had the centroids, I found the distance between
                     different documents based on the centroids and selected the documents nearest to a given
-                    document as recommendation. I also built a web server using Flask to serve this model.
+                    document as a recommendation. I also built a web server using Flask to serve this model.
                   </p>
                   <ul class="list-inline">
                     <li>Tools used: <i>Python(pandas, numpy, scikit-learn), AWS EC2, Flask, Gunicorn</i> </li>
